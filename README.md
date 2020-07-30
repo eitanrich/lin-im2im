@@ -80,3 +80,10 @@ Iter 2: 19801 B-NNs / 19801 consistent, mean NN l2 = 204.487. took 3.49 sec.
 Iter 3: 19801 B-NNs / 19801 consistent, mean NN l2 = 204.079. Converged - terminating ICP iterations.
 Applying the learned transformation on test data...
 ```
+
+## Limitations
+
+As described in the paper:
+* If the true translation is very non-linear, the learned linear transformation will not model it well.
+* If the image domain has a very complex structure, a large number of PCA coefficients will be required to achieve high quality reconstruction.
+* The nonmatching case (i.e. no matching paires exist) requires larger training sets.
