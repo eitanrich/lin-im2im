@@ -87,3 +87,13 @@ As described in the paper:
 * If the true translation is very non-linear, the learned linear transformation will not model it well.
 * If the image domain has a very complex structure, a large number of PCA coefficients will be required to achieve high quality reconstruction.
 * The nonmatching case (i.e. no matching paires exist) requires larger training sets.
+
+## Additional results
+
+![Paired](./figures/lin-results-paired.jpg)
+
+*In the two examples above (edge images to real images and inpainting with a relative large part of the image missing), the true transformation is quite nonlinear, making the learned linear transformation less suitable. Here we used the unconstrained linear transformation rather than the orthogonal one. In addition, pairing supervision was used.*
+
+![NonFaces](./figures/lin-results-shoes.jpg)
+
+*Here is an example showing the linear transformation method applied to a different domain (not just aligned faces).*
