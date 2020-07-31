@@ -31,11 +31,11 @@ Since the entire data is loaded to RAM (not in mini-batches), a lot of (CPU) RAM
 
 ## Code structure
 
-* run_im2im.py: The main python script for training and testing the linear transformation
-* pca-linear-map.py: The main algorithm. Performs PCA for the two domains, resolves polarity ambiguity and learnes an orthogonal or unconstrained linear transformation. In the unpaired case, ICP iterations are used to find the best correspondence.
-* pca.py: Fast PCA using pytorch and the skewness-based polarity synchronization.
-* utils.py: Misc utils
-* data.py: Loading the dataset and applying the synthetic transformations
+* [run_im2im.py](run_im2im.py): The main python script for training and testing the linear transformation
+* [pca-linear-map.py](pca-linear-map.py): The main algorithm. Performs PCA for the two domains, resolves polarity ambiguity and learnes an orthogonal or unconstrained linear transformation. In the unpaired case, ICP iterations are used to find the best correspondence.
+* [pca.py](pca.py): Fast PCA using pytorch and the skewness-based polarity synchronization.
+* [utils.py](utils.py): Misc utils
+* [data.py](data.py): Loading the dataset and applying the synthetic transformations
 
 ## Preparing the datasets
 
